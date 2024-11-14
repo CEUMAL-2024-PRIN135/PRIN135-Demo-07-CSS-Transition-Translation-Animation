@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRIN135-Demo-07: Translation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #4682b4;
+            margin: 50px;
+            cursor: pointer;
+            transition: transform 0.5s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #f1f1f1;
+        }
+
+        .box.translate {
+            transform: translate(50px, 50px);
+        }
+
+        .box.rotate {
+            transform: rotate(45deg);
+        }
+
+        .box.scale {
+            transform: scale(1.5);
+        }
+
+        .box.skew {
+            transform: skew(30deg, 20deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box translate">translate</div>
+    <div class="box rotate">rotate</div>
+    <div class="box scale">scale</div>
+    <div class="box skew">skew</div>
+</body>
+</html>
